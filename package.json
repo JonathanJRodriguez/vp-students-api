@@ -1,0 +1,21 @@
+{
+  "name": "vp-students",
+  "version": "1.0.0",
+  "description": "Code challenge for week 4 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
+    "server": "node ./lib/server.js"
+  },
+  "author": "JonathanJRodriguez",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "jest": "^28.0.2"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}
