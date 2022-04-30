@@ -7,5 +7,7 @@ describe("Unit tests for Partners Controller", () => {
           expect(PartnersController.getAllStudents()).toStrictEqual(partners);
           const emailsWithCertification = PartnersController.getEmailsWithCertification();
           expect(emailsWithCertification).toBeDefined();
+          expect(PartnersController.getStudentsWithCredits(-1)).toStrictEqual(partners);
+          expect(PartnersController.getStudentsWithCredits(10000)).toHaveLength(0);
     });
 });
