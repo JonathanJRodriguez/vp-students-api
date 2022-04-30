@@ -29,6 +29,6 @@ describe("Unit tests for Partner Service", () => {
           "previousCourses": 1,
           "haveCertification": true
         }];
-        expect(PartnerService.getEmailsWithCertification(partners)).toBe(partners[0].email);
+        expect(PartnerService.getEmailsWithCertification(partners)[0]).toStrictEqual(partners[0].email);
   });
 });
