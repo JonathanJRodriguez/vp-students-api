@@ -8,6 +8,6 @@ describe("Unit tests for Partners Controller", () => {
           const emailsWithCertification = PartnersController.getEmailsWithCertification();
           expect(emailsWithCertification).toBeDefined();
           expect(PartnersController.getStudentsWithCredits(-1)).toStrictEqual(partners);
-          expect(PartnersController.getStudentsWithCredits(10000)).toHaveLength(0);
+          expect(PartnersController.getStudentsWithCredits(10000)).toHaveLength(1);
     });
 });
